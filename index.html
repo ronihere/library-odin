@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-field">
+            <label for="name">Name of the Book</label>
+            <input type="text" for="name" name="name">
+            <label for="author">Author</label>
+            <input type="text" name="author">
+            <label for="Pages">Pages</label>
+            <input type="number" name="pages">
+            <br>
+
+            <label for="readMe">read
+                <input type="hidden" name="checkboxName" value="0"><input type="checkbox" onclick="checkboxValue()">
+                <br>
+                <button class="submit-button" onclick="getBookDetails()">submit</button>
+        </div>
+
+        <div class="table-div">
+            <table>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>read?</th>
+                    <th>del</th>
+                </tr>
+                </thead>
+          
+                <tbody>
+
+
+      <!-- <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+      </tr> -->
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
